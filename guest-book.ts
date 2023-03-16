@@ -4,7 +4,7 @@ export const guestEntries = [
     country: "Canada",
   },
   {
-    githubUsername: "passandscoreV2",
+    githubUsername: "nathantarbert",
     country: "USA",
   },
 ];
