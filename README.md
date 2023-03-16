@@ -1,38 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Make your first github contribution!
 
-## Getting Started
+This is a simple project to help you get started with open source contribution. This project is a guest book where you can add your name and country to the guest book.
 
-First, run the development server:
+You will learn how to fork a repository, clone a repository, create a branch, commit your changes, push your changes to your forked repository and create a pull request.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+By signing our guest book, you are taking the first step towards becoming a valuable contributor to the open source community.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Earn a Github achievement
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Earn a Github achievement badge by making your first contribution to an open source project.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<p></p>
+<img src="public/pull-shark.png" alt="pull-shark-badge" width="75"/>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# How to contribute
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Step 1: Fork this repository
 
-## Learn More
+- To fork a repository, click on the Fork button on the top right corner of the repository page. This will create a copy of the repository in your Github account.
 
-To learn more about Next.js, take a look at the following resources:
+### Step 2: Clone the repository
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- To clone a repository, click on the green Code button on the top right corner of the forked repository page. Copy the HTTPS URL provided and run the following command in your terminal:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  ```js
+  git clone <url>
+  ```
 
-## Deploy on Vercel
+### Step 3: Create a branch
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- To create a new branch, run the following command in your terminal:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  ```js
+  git checkout -b <branch-name>
+  ```
+
+### Step 4: Add your entry to the guest book
+
+- To create a entry you need to add an object to the `guestEntries` array in the `guest-book.ts` file. The object should have the following properties: `name`, `country`.
+
+### Step 5: Commit your changes
+
+- To commit your changes, run the following commands in your terminal:
+  ```js
+      git add .
+      git commit -m "Guest Book Entry"
+  ```
+
+### Step 6: Push your changes to your forked repository
+
+- To push your changes, run the following command in your terminal:
+  ```js
+  git push origin <branch-name>
+  ```
+
+### Step 7: Create a pull request
+
+- To create a pull request, click on the green Create Pull Request button on the top right corner of the forked repository page. Add a title and description to your pull request.
+
+### Step 8: Wait for your pull request to be merged
+
+- Once your pull request is merged, you will receive a notification email. You can then pull the changes from the upstream repository to your local repository to keep it up-to-date.

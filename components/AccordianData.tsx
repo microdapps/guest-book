@@ -54,6 +54,9 @@ export const InstructionData = () => {
             the top right corner of the forked repository page. Copy the{" "}
             <Kbd>HTTPS</Kbd> URL provided and run the following command in your
             terminal:
+            <p>
+              <Kbd>{`git clone <url>`}</Kbd>
+            </p>
           </Accordion.Panel>
         </Accordion.Item>
 
@@ -94,10 +97,7 @@ export const InstructionData = () => {
                 <Kbd>git add .</Kbd>
               </Box>
               <Box>
-                <Kbd>git commit -m </Kbd>
-              </Box>
-              <Box>
-                <p>Add your Github username to the guest</p>
+                <Kbd>{`git commit -m "Guest Book Entry"`} </Kbd>
               </Box>
             </>
           </Accordion.Panel>
@@ -113,6 +113,31 @@ export const InstructionData = () => {
               command in your terminal:
             </p>{" "}
             <Kbd>git push origin branch-name</Kbd>
+          </Accordion.Panel>
+        </Accordion.Item>
+
+        <Accordion.Item className={classes.item} value="step-7">
+          <Accordion.Control>Step 7: Create a pull request</Accordion.Control>
+          <Accordion.Panel>
+            <p>
+              To create a pull request, click on the green{" "}
+              <Kbd>Create Pull Request</Kbd> button on the top right corner of
+              the forked repository page. Add a title and description to your
+              pull request.
+            </p>
+          </Accordion.Panel>
+        </Accordion.Item>
+
+        <Accordion.Item className={classes.item} value="step-8">
+          <Accordion.Control>
+            Step 8: Wait for your pull request to be merged
+          </Accordion.Control>
+          <Accordion.Panel>
+            <p>
+              Once your pull request is merged, you will receive a notification
+              email. You can then pull the changes from the upstream repository
+              to your local repository to keep it up-to-date.
+            </p>
           </Accordion.Panel>
         </Accordion.Item>
       </Accordion>
