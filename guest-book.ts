@@ -1,6 +1,6 @@
-// {
-//   githubUsername: "passandscore",
-//   country: "Canada",
-// },
-
-export const guestEntries = [];
+export const guestEntries = [
+  {
+    githubUsername: "passandscore",
+    country: "Canada",
+  },
+];
