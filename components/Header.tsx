@@ -1,12 +1,14 @@
-import { Container, Text, Image } from "@mantine/core";
+import { Container, Image, Button } from "@mantine/core";
+import { IconUsers } from "@tabler/icons-react";
 
 export const Header = () => {
   return (
     <Container
       style={{
         display: "flex",
-        justifyContent: "flex-start",
-        marginTop: "1rem",
+        justifyContent: "space-between",
+        alignItems: "center",
+        backgroundColor: "black",
       }}
     >
       <Image
@@ -14,7 +16,25 @@ export const Header = () => {
         alt="MicroDapps Logo"
         width={75}
         height={75}
+        onClick={() => {
+          window.location.href = "/";
+        }}
+        style={{ cursor: "pointer" }}
       />
+      <Button
+        size="sm"
+        variant="default"
+        leftIcon={<IconUsers size={20} />}
+        style={{
+          cursor: "pointer",
+          borderRadius: "3px",
+        }}
+        onClick={() => {
+          window.location.href = "/guest-book";
+        }}
+      >
+        Guest Book
+      </Button>
     </Container>
   );
 };

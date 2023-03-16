@@ -1,16 +1,5 @@
-import {
-  createStyles,
-  Container,
-  Group,
-  ActionIcon,
-  rem,
-  Image,
-} from "@mantine/core";
-import {
-  IconBrandTwitter,
-  IconBrandYoutube,
-  IconBrandInstagram,
-} from "@tabler/icons-react";
+import { createStyles, Container, Group, ActionIcon, rem } from "@mantine/core";
+import { IconBrandTwitter, IconBrandYoutube } from "@tabler/icons-react";
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -47,13 +36,22 @@ export const FooterSocial = () => {
       <Container className={classes.inner}>
         <Group spacing={0} className={classes.links} position="right" noWrap>
           <ActionIcon size="lg">
-            <IconBrandTwitter size="1.05rem" stroke={1.5} />
+            <IconBrandTwitter
+              size="1.05rem"
+              stroke={1.5}
+              onClick={() => {
+                window.open("https://twitter.com/microdapps", "_blank");
+              }}
+            />
           </ActionIcon>
           <ActionIcon size="lg">
-            <IconBrandYoutube size="1.05rem" stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <IconBrandInstagram size="1.05rem" stroke={1.5} />
+            <IconBrandYoutube
+              size="1.05rem"
+              stroke={1.5}
+              onClick={() => {
+                window.open("https://www.youtube.com/@microdapps", "_blank");
+              }}
+            />
           </ActionIcon>
         </Group>
       </Container>

@@ -93,8 +93,8 @@ export function HeroTitle() {
         </h1>
 
         <Text className={classes.description} color="dimmed">
-          By signing our logbook, you are taking the first step towards becoming
-          a valuable contributor to the open source community.
+          By signing our guest book, you are taking the first step towards
+          becoming a valuable contributor to the open source community.
         </Text>
 
         <Group className={classes.controls}>
@@ -103,6 +103,9 @@ export function HeroTitle() {
             className={classes.control}
             variant="gradient"
             gradient={{ from: "purple", to: "cyan" }}
+            onClick={() => {
+              window.location.href = "/instructions";
+            }}
           >
             Contribute
           </Button>
@@ -114,6 +117,9 @@ export function HeroTitle() {
             variant="default"
             className={classes.control}
             leftIcon={<GithubIcon size={20} />}
+            onClick={() => {
+              window.location.href = "https://github.com/microdapps/guest-book";
+            }}
           >
             GitHub
           </Button>
