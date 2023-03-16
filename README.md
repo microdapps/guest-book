@@ -37,7 +37,7 @@ Earn a Github achievement badge by making your first contribution to an open sou
 
 ### Step 4: Add your entry to the guest book
 
-- To create a entry you need to add an object to the `guestEntries` array in the `guest-book.ts` file. The object should have the following properties: `name`, `country`.
+- To create a entry you need to add an object to the `guestEntries` array in the `guest-book.ts` file. The object should have the following properties: `githubUsername`, `country`.
 
 ### Step 5: Commit your changes
 
