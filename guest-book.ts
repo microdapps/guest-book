@@ -4,7 +4,7 @@ export const guestEntries = [
     country: "Canada",
   },
   {
-    githubUsername: "nathantarbert",
+    githubUsername: "NathanTarbert",
     country: "USA",
   },
 ];
